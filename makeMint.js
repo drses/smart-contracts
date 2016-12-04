@@ -21,7 +21,7 @@ var def = cajaVM.def;
 var Nat = cajaVM.Nat;
 
 var makeMint = function() {
-  var m = WeakMap();
+  var m = new WeakMap();
   var makePurse = function() { return mint(0); };
   
   var mint = function(balance) {

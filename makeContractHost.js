@@ -87,7 +87,7 @@ var confine = cajaVM.confine;
  * </pre>
  */
 var makeContractHost = function() {
-  var m = WeakMap();
+  var m = new WeakMap();
 
   return def({
     setup: function(contractSrc) {
